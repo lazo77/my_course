@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import {WelcomePage} from './components/welcomePage';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
 
       </header>
+      <WelcomePage/>
     </div>
   );
 }

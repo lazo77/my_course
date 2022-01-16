@@ -5,7 +5,8 @@ export const Button: FC<{
   onClickHandler: (event: MouseEvent<HTMLButtonElement>) => void;
 }> = ({ text = '', onClickHandler }) => {
   return (
-  <button onClick={onClickHandler}>
-    {text}
-  </button>
-  )}
+    <button onClick={onClickHandler}>
+      {text}
+    </button>
+  )
+}

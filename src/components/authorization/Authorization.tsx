@@ -5,7 +5,7 @@ import {Button} from '../common/button';
 export const Authorization: FC= () => {
   return (
     <div className={'authWrapper'}>
-
+      
     </div>
   )
 };

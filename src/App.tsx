@@ -1,21 +1,23 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import { MainPage } from './components/mainPage';
+import { Routes, Route} from 'react-router-dom';
 import './App.scss';
+import { Layout } from './components/layout';
+
+import { MainPage } from './pages/mainPage';
+import {NotFoundPage} from './pages/notFoundPage';
+import {About} from './pages/about';
+import {Courses} from './pages/courses';
 
 function App() {
   return (
     <>
-      <header>
-        <Link to='/'>Главная</Link>
-        <Link to='/about'>О нас</Link>
-        <Link to='/courses'>Курсы</Link>
-      </header>
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/courses' element={<Courses />} />
-        <Route path='*' element={<NotFoundPage />} />
+        <Route path='/' element={<Layout />}>
+          <Route index element={<MainPage />} />
+          <Route path='about' element={<About />} />
+          <Route path='courses' element={<Courses />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </>
   );

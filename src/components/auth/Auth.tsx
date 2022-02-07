@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import {Input} from '../common/input';
 import {Button} from '../common/button';
 
-export const Authorization: FC= () => {
+export const Auth: FC= () => {
   return (
     <div className={'authWrapper'}>
       

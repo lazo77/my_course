@@ -1,0 +1,15 @@
+{
+    "users": [{
+        "id": 1,
+        "email": "lazo28.09.77@gmail.com",
+        "password": "12345678",
+        "firstName": "Aleksandr",
+        "lastName": "Lozovskiy",
+        "isTutor": true,
+        "isLoggedIn": false
+    }],
+    "courses": [{
+        "courseName": "GeoGebra",
+        "courseDescription": "Бесплатная кроссплатформенная динамическая математическая программа для всех уровней образования."
+    }]
+}
